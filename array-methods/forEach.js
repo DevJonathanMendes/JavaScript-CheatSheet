@@ -4,11 +4,11 @@
 const cities = ["RJ", "SP", "MG"];
 
 // Executa uma função (efeito colateral) para cada item do array.
-cities.forEach((item, index, array) => console.log(item, index, array));
+cities.forEach((element, index, array) => console.log(element, index, array));
 
 // A mesmo coisa.
-const log = (item, index, array) => console.log(item, index, array);
+const log = (element, index, array) => console.log(element, index, array);
 cities.forEach(log);
 
-// Não retorna nada. Para isso use o map().
+// Não retorna nada, apenas causa um efeito colateral. Para isso use o map().
 cities.forEach(function (index) { return index });
