@@ -1,8 +1,22 @@
 let array = [1, 2, 3];
 
+// O método find() retorna o valor do primeiro elemento do array que satisfizer a função de teste provida. Caso contrario, undefined é retornado.
+array.find(element => element > 1);
+
+// O método includes() determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
+array.includes(2);
+
+// O método indexOf() retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente.
+array.indexOf(3);
+
+// O método fill() preenche todos os valores do array a partir do índice inicial a um índice final com um valor estático.
+// O intervalo de preenchimento dos elementos é [início, fim).
+array.fill(1); // [1, 1, 1]
+array.fill("a", 1, 2); // [a, 2, 3]
+
 // Converte todos os elementos em strings, concatena e retorna.
-array.join(" ") // > "1 2 3"
-array.join(", ") // > "1, 2, 3"
+array.join(" "); // > "1 2 3"
+array.join(", "); // > "1, 2, 3"
 
 // Inverte a ordem dos elementos e retorna o array invertido.
 array.reverse();
