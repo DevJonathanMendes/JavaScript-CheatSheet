@@ -1,9 +1,7 @@
 # JavaScript-CheatSheet
 
-Resumo de JavaScript, para revisões rápidas.
+Gosto de fazer meus próprios resumos.
 
 Fontes:
 
-Livro: JavaScript: O Guia Definitivo;
-
-Documentação JavaScript.
+JavaScript: O Guia Definitivo (Livro) e a documentação.
