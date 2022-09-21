@@ -34,8 +34,8 @@ false == (x > y) // verdadeiro: falso é igual a falso
 
 
     // Os operadores lógicos combinam ou invertem valores booleanos
-    (x == 2) && (y == 3) // verdadeiro: as duas comparações são verdadeiras. && é E.
-        (x > 3) || (y < 3)   // falso: nenhuma das comparações é verdadeira. || é OU.
+(x == 2) && (y == 3) // verdadeiro: as duas comparações são verdadeiras. && é E.
+(x > 3) || (y < 3)   // falso: nenhuma das comparações é verdadeira. || é OU.
 !(x == y)            // verdadeiro: ! inverte um valor booleano
 
 // === Operador de igualdade restrito (Não faz conversões ao testar a igualdade).
@@ -64,7 +64,7 @@ d instanceof Object; // É avaliado como true; todos os objetos são instâncias
 d instanceof Number; // É avaliado como false; d não é um objeto Number
 
 var a = [1, 2, 3]; // Cria um array com sintaxe de array literal
-a instanceof Array; // É avaliado como true; a é um array
+a instanceof Array;  // É avaliado como true; a é um array
 a instanceof Object; // É avaliado como true; todos os arrays são objetos
 a instanceof RegExp; // É avaliado como false; os arrays não são expressões regulares
 

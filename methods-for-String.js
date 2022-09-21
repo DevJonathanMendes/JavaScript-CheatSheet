@@ -12,5 +12,8 @@ s.split(", ")        // = ["hello", "world"] divide em substrings
 s.replace("h", "H")  // = "Hello, world": substitui todas as instâncias
 s.toUpperCase()      // = "HELLO, WORLD"
 
-/* Lembre-se de que as strings são imutáveis em JavaScript. Métodos como replace() e toUpperCase()
-retornam novas strings – eles não modificam a string em que são chamados. */
+/*
+Lembre-se de que as strings são imutáveis em JavaScript.
+Métodos como replace() e toUpperCase()
+retornam novas strings – eles não modificam a string em que são chamados.
+*/

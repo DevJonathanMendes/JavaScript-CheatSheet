@@ -5,7 +5,7 @@ var book = {             // Objetos são colocados entre chaves.
 };
 
 // Acesse as propriedades de um objeto com . ou []:
-book.topic                // Acessa topic que contém "JavaScript"
-book["fat"]               // Outro modo de acessar valores de propriedade.
+book.topic;               // Acessa topic que contém "JavaScript"
+book["fat"];              // Outro modo de acessar valores de propriedade.
 book.author = "Flanagan"; // Crie novas propriedades por meio de atribuição.
 book.contents = {};       // {} é um objeto vazio sem qualquer propriedade.
