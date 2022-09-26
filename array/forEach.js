@@ -1,4 +1,4 @@
-//Método de array forEach() não retorna valor (ou retorna undefined), executa efeito colateral.
+// Método de array forEach() não retorna valor (ou retorna undefined), executa efeito colateral.
 
 // Array para iteração.
 const cities = ["RJ", "SP", "MG"];
