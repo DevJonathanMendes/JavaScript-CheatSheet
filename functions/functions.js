@@ -31,13 +31,3 @@ points.dist = function () {       // Define um método para calcular a distânci
     // Math.sqrt() calcula a raiz quadrada;
 };
 points.dist() // 1,414: distância entre nossos 2 pontos
-
-// Funções Geradoras são funções cuja execução pode ser interrompida e posteriormente reconduzida.
-function* generator() {
-    let calls = 0;
-    while (true)
-        yield calls++;
-};
-
-const counter = generator();
-console.log(counter.next().value);
