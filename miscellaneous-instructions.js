@@ -6,10 +6,10 @@ instrução */
 /* Essa instrução adiciona objeto na frente do encadeamento de escopo, executa instrução e, então,
 restaura o encadeamento de escopo ao seu estado original. */
 
-/* A instrução with é proibida no modo restrito (consulte a Seção 5.7.3) e deve ser considerada desaprovada
-no modo não restrito: evite usá-la, quando possível. Um código JavaScript que utiliza with
-é difícil de otimizar e é provável que seja executado mais lentamente do que um código equivalente
-escrito sem a instrução with. */
+/* A instrução with é proibida no modo restrito e deve ser considerada desaprovada
+no modo não restrito: evite usá-la, quando possível.
+Um código JS que utiliza with é difícil de otimizar e é provável que seja executado
+mais lentamente do que um código equivalente escrito sem a instrução with. */
 
 document.forms[0].address.value
 
