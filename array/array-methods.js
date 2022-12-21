@@ -34,6 +34,14 @@ array.concat(4, [5, [6, 7]]) // > [1, 2, 3, 4, 5, [6, 7]]
 array.slice(0, 1) // > [1]
 array.slice(-1) // > [3]
 
+// Remover/adiciona itens de um array, retorna o array novo.
+const index = 1; // Onde começa a adicionar.
+const howmany = 2; // Opcional. Número de itens para remover.
+const item = "string"; // Opcional. Elemento(s) para adicionar.
+
+array.splice(index, howmany, item)
+array.splice(index, howmany, 5, 6, 8); // Retorna o array novo.
+
 // push() e pop() permitem trabalhar com arrays como se fossem pilhas.
 // O método push() anexa um ou mais novos elementos no final e retorna o novo comprimento.
 // O método pop() faz o inverso: exclui o último elemento, decrementa o comprimento e retorna o valor que removeu.
