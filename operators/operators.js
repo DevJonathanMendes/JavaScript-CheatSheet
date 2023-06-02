@@ -11,6 +11,13 @@ x >= y            // falso: maior ou igual a
 "two" > "three"   // verdadeiro: "tw" é alfabeticamente maior do que "th"
 false == (x > y)  // verdadeiro: falso é igual a falso
 
+// Nullish coalescing.
+// Operador lógico, retorna o operando do lado direito se o operando do lado esquerdo é null ou undefined.
+const nullish = null ?? 'default string';
+console.log(nullish); // Expected output: "default string"
+
+const nullish2 = 0 ?? 42;
+console.log(nullish2); // Expected output: 0
 
 // Os operadores lógicos combinam ou invertem valores booleanos
 (x == 2) && (y == 3); // verdadeiro: as duas comparações são verdadeiras. && é E.
