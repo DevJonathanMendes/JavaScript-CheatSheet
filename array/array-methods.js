@@ -7,7 +7,8 @@ array.find(element => element > 1);
 array.includes(2);
 
 // O método indexOf() retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente.
-array.indexOf(3);
+array.indexOf(3); // Do início ao fim.
+array.lastIndexOf(); // Do fim para o início.
 
 // O método fill() preenche todos os valores do array a partir do índice inicial a um índice final com um valor estático.
 // O intervalo de preenchimento dos elementos é [início, fim).
@@ -33,6 +34,10 @@ array.concat(4, [5, [6, 7]]) // > [1, 2, 3, 4, 5, [6, 7]]
 // Retorna um pedaço (ou subarray) do array especificado. Seus dois argumentos especificam o início e o fim do trecho a ser retornado.
 array.slice(0, 1) // > [1]
 array.slice(-1) // > [3]
+
+// every() e some().
+array.every((valueIndex) => valueIndex < 10); // every() é como "para todo", se todos, retorna true, se não, false.
+array.some((valueIndex) => valueIndex > 1); 	// some() é como "existe", se existir algum, true, se não, false.
 
 // Remover/adiciona itens de um array, retorna o array novo.
 const index = 1; // Onde começa a adicionar.

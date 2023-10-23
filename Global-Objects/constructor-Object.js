@@ -1,8 +1,8 @@
 const myObject = {
-    "property": "value",
-    method() {
-        console.log("Hello!");
-    }
+	"property": "value",
+	method() {
+		console.log("Hello!");
+	}
 };
 
 Object();
