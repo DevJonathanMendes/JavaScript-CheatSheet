@@ -8,21 +8,21 @@ const numbers = [1, 2, 3];
 const newNumbers = numbers.map((element, index, array) => element * 2);
 
 const products = [
-    { name: "Monitor", price: 1399.99 },
-    { name: "Mouse", price: 39.99 },
-    { name: "Teclado", price: 199.99 },
-    { name: "Pen Drive 32Gb", price: 49.99 },
-    { name: "Pen Drive 16Gb", price: 28.99 },
-    { name: "Pen Drive 8Gb", price: 9.99 }
+	{ name: "Monitor", price: 1399.99 },
+	{ name: "Mouse", price: 39.99 },
+	{ name: "Teclado", price: 199.99 },
+	{ name: "Pen Drive 32Gb", price: 49.99 },
+	{ name: "Pen Drive 16Gb", price: 28.99 },
+	{ name: "Pen Drive 8Gb", price: 9.99 }
 ];
 
 const saleProducts = products.map(({ name, price }) => {
-    if (price >= 30) {
-        return {
-            name: name,
-            price: price / 2
-        };
-    }
+	if (price >= 30) {
+		return {
+			name: name,
+			price: price / 2
+		};
+	}
 
-    return { name, price };
+	return { name, price };
 });
