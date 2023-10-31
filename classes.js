@@ -87,3 +87,69 @@ class Leao extends Gato {
 
 let leao = new Leao("Fuzzy");
 leao.falar();
+
+class Point {
+	/**
+	 * Creates an object containing X and Y positions.
+	 * @param {number} posX - X axis position.
+	 * @param {number} posY - Y axis position.
+	 * @returns {object} Return a object with X e Y positions.
+	 */
+	constructor(posX, posY) {
+		this.x = posX;
+		this.y = posY;
+	}
+
+	/**
+	 * @type {number}
+	 */
+	#_x;
+	/**
+	 * @type {number}
+	 */
+	#_y;
+
+	/**
+	 * @type {number}
+	 */
+	get x() {
+		return this.#_x;
+	}
+
+	/**
+	 * @param {number} value - X position.
+	 */
+	set x(value) {
+		this.#_x = this.#setPos(value);
+	}
+
+	/**
+	 * @type {number}
+	 */
+	get y() {
+		return this.#_y;
+	}
+
+	/**
+	 * @param {number} value - Y position.
+	 */
+	set y(value) {
+		this.#_y = this.#setPos(value);
+	}
+
+	/**
+	 * Function that deals with assigning the axis value.
+	 * @param {number} value - The value of the axis.
+	 */
+	#setPos(value) {
+		if (typeof value !== "number") {
+			throw new Error("The position value must be of type number");
+		}
+
+		if (value < 0) {
+			throw new Error("Position value cannot be less than zero");
+		}
+
+		return value;
+	}
+}
