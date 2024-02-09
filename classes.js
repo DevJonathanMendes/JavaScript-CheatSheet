@@ -100,41 +100,46 @@ class Point {
 		this.y = posY;
 	}
 
+	// Propriedades privadas reais. Só podem ser acessadas dentro da classe onde foram definidas.
 	/**
 	 * @type {number}
 	 */
-	#_x;
+	#x;
 	/**
 	 * @type {number}
 	 */
-	#_y;
+	#y;
 
+	// Propriedade "privadas/interna". Não devem ser acessadas, mas tem a possibilidade.
 	/**
 	 * @type {number}
 	 */
+	_z = 10;
+
+	// Getter e Setter para a posição X
 	get x() {
-		return this.#_x;
+		return this.#x;
 	}
 
 	/**
 	 * @param {number} value - X position.
 	 */
-	set x(value) {
-		this.#_x = this.#setPos(value);
+	set x(valor) {
+		this.#x = this.#setPos(valor);
 	}
 
 	/**
 	 * @type {number}
 	 */
 	get y() {
-		return this.#_y;
+		return this.#y;
 	}
 
 	/**
 	 * @param {number} value - Y position.
 	 */
-	set y(value) {
-		this.#_y = this.#setPos(value);
+	set y(valor) {
+		this.#y = this.#setPos(valor);
 	}
 
 	/**
@@ -142,7 +147,7 @@ class Point {
 	 * @param {number} value - The value of the axis.
 	 */
 	#setPos(value) {
-		if (typeof value !== "number") {
+		if (isNaN(value)) {
 			throw new Error("The position value must be of type number");
 		}
 
@@ -152,4 +157,14 @@ class Point {
 
 		return value;
 	}
+
+	// Método estático para retornar o nome da classe quando não instanciada.
+	static toString() {
+		return this.prototype.constructor.name;
+	}
 }
+
+// Método de instância para retornar uma representação em string do objeto Point.
+Point.prototype.toString = function () {
+	return `Point { x: ${this.x}, y: ${this.y} }`;
+};
